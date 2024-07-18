@@ -1,3 +1,5 @@
+import 'package:first_app_df/first_module/screens/bikes_screen.dart';
+import 'package:first_app_df/first_module/screens/hello_world_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +11,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      // home: HelloWorldScreen(),
+      home: BikesScreen(),
     );
   }
 }
